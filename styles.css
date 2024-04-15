@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add horizontal padding */
+  }
+  
+  /* Header styles */
+  .header-section {
+    background-color: #333; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust logo height as needed */
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #ffd700; /* Yellow color on hover */
+  }
+  
+  /* Hero section styles */
+  .hero-section {
+    background-image: url('images/about-img.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Light text color */
+    padding: 200px 0; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e6c800;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #e6c800;
+
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Yellow button color */
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e6c800; /* Darker yellow on hover */
+  }
+
+  .footer-section {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add horizontal padding */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px; /* Adjust logo width as needed */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-links ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffd700; /* Yellow color on hover */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffd700; /* Yellow color on hover */
+  }
+  
+  .footer-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
