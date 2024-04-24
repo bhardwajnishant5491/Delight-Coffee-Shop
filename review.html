@@ -33,63 +33,63 @@
     <div class="container">
       <h2>What Our Customers Say</h2>
       <div class="testimonials-grid">
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer1.jpg" alt="Customer 1" class="testimonial-img">
           <div class="testimonial-content">
             <p>"Amazing coffee selection and friendly staff! I love starting my day with a cup of their freshly brewed coffee."</p>
             <p class="author">- Sarah D.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer2.jpg" alt="Customer 2" class="testimonial-img">
           <div class="testimonial-content">
             <p>"The atmosphere here is perfect for catching up with friends or getting work done. Plus, the espresso drinks are top-notch!"</p>
             <p class="author">- Michael P.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer3.jpg" alt="Customer 3" class="testimonial-img">
           <div class="testimonial-content">
             <p>"I'm a regular at this coffee shop because of their consistent quality and cozy ambiance. Highly recommended!"</p>
             <p class="author">- Emily S.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer4.jpg" alt="Customer 4" class="testimonial-img">
           <div class="testimonial-content">
             <p>"Such a lovely place to unwind after a busy day. Their cappuccinos are always on point!"</p>
             <p class="author">- David L.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer5.jpg" alt="Customer 5" class="testimonial-img">
           <div class="testimonial-content">
             <p>"I appreciate the attention to detail in every cup of coffee I order here. Great job!"</p>
             <p class="author">- Jessica M.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer6.jpg" alt="Customer 6" class="testimonial-img">
           <div class="testimonial-content">
             <p>"The staff here is knowledgeable and passionate about coffee. It's a pleasure to support this local gem."</p>
             <p class="author">- Alex R.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer7.jpg" alt="Customer 7" class="testimonial-img">
           <div class="testimonial-content">
             <p>"I've been coming here for years, and the quality has never disappointed. Keep up the great work!"</p>
             <p class="author">- William T.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer8.jpg" alt="Customer 8" class="testimonial-img">
           <div class="testimonial-content">
             <p>"This place has become my go-to spot for a quiet coffee break. Their latte art is always impressive."</p>
             <p class="author">- Olivia K.</p>
           </div>
         </div>
-        <div class="testimonial-item">
+        <div class="testimonial-slide">
           <img src="images/customer9.jpg" alt="Customer 9" class="testimonial-img">
           <div class="testimonial-content">
             <p>"The coffee here is simply outstanding! Each cup feels like a delightful journey through flavor and aroma."</p>
@@ -117,6 +117,23 @@
     </div>
   </section>
 
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.querySelectorAll('.testimonial-slide');
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+    showSlides(); // Start slideshow
+  </script>
   <footer class="footer-section">
     <div class="container">
       <div class="footer-content">
